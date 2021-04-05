@@ -1,3 +1,21 @@
 geometry_points.py
 matrizTransformacion.py
+eje_save.py
+ScreenCamera_2021-01-29-18-37-36.json
+ScreenCapture_2021-01-29-18-37-36.png
+__pycache__/
+data.ply
+data_cylinder.ply
+data_meshStl.ply
+data_mesh_obj.ply
+data_obj.ply
+data_plane.ply
+data_stl.ply
+data_vertex.ply
+eje_save.py
+estimate_normals.py
+example_dir_stl_vt.py
+matrizTransformacion.py
+np_transfor_stl.py
+
 
