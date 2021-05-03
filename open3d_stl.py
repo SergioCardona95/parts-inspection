@@ -9,7 +9,7 @@ from pyntcloud import PyntCloud as pytc
 
 # mesh_stl = o3d.io.read_triangle_mesh("/home/sergio/Documentos/Study/piezas_Freecad/pieza1.stl")
 
-mesh_stl = o3d.io.read_triangle_mesh("/home/sergio/Documentos/Study/piezas_Freecad/pieza_vol.stl")
+mesh_stl = o3d.io.read_triangle_mesh("/home/sergio/Documentos/Study/parts-inspection/piezas_Freecad/study_piece010.stl")
 cloud_stl= mesh_stl.sample_points_poisson_disk(20000)
 array_stl=np.asarray(cloud_stl.points)
 save_cloud_stl=o3d.io.write_point_cloud("./data_meshStl.ply", cloud_stl)
@@ -25,7 +25,7 @@ convex_hull_stl = volume_stl.structures[convex_hull_volume_stl_id]
 volume_cloud_stl=convex_hull_stl.volume
 
 #####mesh get object real######
-mesh_obj= o3d.io.read_triangle_mesh("/home/sergio/Documentos/Study/piezas_Freecad/pieza2.stl")
+mesh_obj= o3d.io.read_triangle_mesh("/home/sergio/Documentos/Study/parts-inspection/piezas_Freecad/pieza2.stl")
 cloud_obj = mesh_obj.sample_points_poisson_disk(20000)
 array_obj=np.asarray(cloud_obj.points)
 o3d.visualization.draw_geometries([cloud_obj])
